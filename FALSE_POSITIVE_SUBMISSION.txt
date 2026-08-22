@@ -1,0 +1,11 @@
+Suggested false-positive submission text
+========================================
+
+Product: Crasher Unlocker V1.2
+Type: Offline Castle Crashers save editor
+
+I believe this executable is being detected incorrectly. It is an open-source C#/.NET Framework save editor. It does not inject into the game, modify process memory, connect to the internet, download code, or install persistence. It locates the local Steam save, checks that Castle Crashers is closed, creates a backup, decrypts/edits/re-encrypts cc_save.dat, validates the checksum, and writes the user's own save back to disk.
+
+The full source and standard Microsoft C# build script are included. The executable is not packed or obfuscated.
+
+Please review the detection as a possible false positive / potentially-unsafe game utility classification rather than malware.

@@ -32,13 +32,15 @@ Changes stay staged until **Apply Changes** is pressed, and an automatic backup 
 
 ## Build from source
 
+The source is under `src/` and is split into several C# files for easier review on GitHub.
+
 Run `BUILD_CRASHER_UNLOCKER_V1_2.cmd` on Windows with .NET Framework 4.x available.
 
 Output:
 
 `Crasher Unlocker V1.2.exe`
 
-No packer or obfuscator is used.
+No packer or obfuscator is used. The public source build does not require the release icon.
 
 ## Antivirus false-positive note
 

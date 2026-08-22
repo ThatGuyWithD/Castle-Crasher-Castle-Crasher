@@ -16,26 +16,35 @@ if not exist "%CSC%" (
   exit /b 1
 )
 
-if not exist "%~dp0CUI.ico" (
-  echo.
-  echo ERROR: CUI.ico is missing from this folder.
-  echo.
-  pause
-  exit /b 1
-)
-
 echo.
 echo Building Crasher Unlocker V1.2...
 echo.
 
 "%CSC%" /nologo /target:winexe /platform:anycpu /optimize+ /debug- ^
   /out:"%~dp0Crasher Unlocker V1.2.exe" ^
-  /win32icon:"%~dp0CUI.ico" ^
   /reference:System.dll ^
   /reference:System.Core.dll ^
   /reference:System.Drawing.dll ^
   /reference:System.Windows.Forms.dll ^
-  "%~dp0CrasherUnlocker.cs"
+  "%~dp0src\CCSaveCrypto.Part01.cs" ^
+  "%~dp0src\CCSaveCrypto.Part02.cs" ^
+  "%~dp0src\Support.cs" ^
+  "%~dp0src\MainForm.Part01.cs" ^
+  "%~dp0src\MainForm.Part02.cs" ^
+  "%~dp0src\MainForm.Part03.cs" ^
+  "%~dp0src\MainForm.Part04.cs" ^
+  "%~dp0src\MainForm.Part05.cs" ^
+  "%~dp0src\MainForm.Part06.cs" ^
+  "%~dp0src\MainForm.Part07.cs" ^
+  "%~dp0src\MainForm.Part08.cs" ^
+  "%~dp0src\MainForm.Part09.cs" ^
+  "%~dp0src\MainForm.Part10.cs" ^
+  "%~dp0src\MainForm.Part11.cs" ^
+  "%~dp0src\MainForm.Part12.cs" ^
+  "%~dp0src\MainForm.Part13.cs" ^
+  "%~dp0src\MainForm.Part14.cs" ^
+  "%~dp0src\MainForm.Part15.cs" ^
+  "%~dp0src\Program.cs"
 
 if errorlevel 1 (
   echo.
@@ -51,5 +60,7 @@ echo ==========================================
 echo.
 echo Output:
 echo "%~dp0Crasher Unlocker V1.2.exe"
+echo.
+echo Optional: add your own CUI.ico to the folder and compile with /win32icon if you want the release icon.
 echo.
 pause

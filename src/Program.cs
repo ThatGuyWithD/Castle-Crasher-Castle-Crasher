@@ -13,11 +13,30 @@ using Microsoft.Win32;
 
 static class Program
 {
+    static void ApplyBranding(Control control)
+    {
+        if (control == null) return;
+
+        if (!String.IsNullOrEmpty(control.Text))
+        {
+            control.Text = control.Text
+                .Replace("Crasher Unlocker V1.2", "Crasher Editor V1.2")
+                .Replace("Crasher Unlocker", "Crasher Editor");
+        }
+
+        foreach (Control child in control.Controls)
+            ApplyBranding(child);
+    }
+
     [STAThread]
     static void Main()
     {
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
-        Application.Run(new MainForm());
+
+        MainForm form = new MainForm();
+        ApplyBranding(form);
+        form.Text = "Crasher Editor V1.2";
+        Application.Run(form);
     }
 }

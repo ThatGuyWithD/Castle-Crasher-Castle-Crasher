@@ -1,4 +1,6 @@
-# Crasher Unlocker V1.2
+# Castle Editor [Castle Crasher]
+
+## Crasher Editor V1.2
 
 Offline Castle Crashers save editor for your local Steam profile.
 
@@ -22,14 +24,14 @@ Offline Castle Crashers save editor for your local Steam profile.
 - Magic: 1–25
 - Agility: 1–25
 
-Crasher Unlocker edits only your own local save/profile and does not affect other players.
+Crasher Editor edits only your own local save/profile and does not affect other players.
 
 ## Build from source
 
 The source is in `src/`.
 
-Run `BUILD_CRASHER_UNLOCKER_V1_2.cmd` on Windows with .NET Framework 4.x available.
+Run `BUILD_CRASHER_EDITOR_V1_2.cmd` on Windows with .NET Framework 4.x available.
 
 Output:
 
-`Crasher Unlocker V1.2.exe`
+`Crasher Editor V1.2.exe`

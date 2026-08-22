@@ -1,0 +1,29 @@
+Crasher Unlocker V1.2 - Clean Release Validation
+================================================
+
+STATIC CHECKS COMPLETED
+PASS  Assembly title and file version use V1.2 / 1.2.0.0.
+PASS  No visible Advanced/Overclock character-value editor remains.
+PASS  Dead legacy Advanced/Overclock source paths were removed.
+PASS  Level input maximum is 99.
+PASS  STR / DEF / MAG / AGI input maximum is 25.
+PASS  Combat stats are read/written using direct stored-byte semantics.
+PASS  MAX Stats writes the supported combat-stat maximum of 25.
+PASS  MAX All Characters uses supported combat-stat values.
+PASS  Character editing remains staged until Apply.
+PASS  Apply creates a backup before writing.
+PASS  Restore/backup functionality remains present.
+PASS  Castle Crashers running-process check remains present before writes.
+PASS  Profile Unlocks wording states the scope is the user's own save/profile.
+PASS  No networking/download code found in the source.
+PASS  No process injection / WriteProcessMemory / remote-thread code found in the source.
+PASS  Native DLL imports are limited to Windows UI theming (uxtheme/dwmapi).
+
+RUNTIME CHECK REQUIRED AFTER BUILD
+- Launch V1.2 on Windows.
+- Load a real save with Castle Crashers closed.
+- Verify Overview, Stats & Items, Equipment, Progress, Profile, and Backups tabs.
+- Verify Level 99 and stats 25 persist correctly through game load/save.
+- Verify one normal edit -> Apply -> game launch -> return to editor.
+- Verify Restore Latest on a test copy/backup.
+- Submit the exact built EXE to VirusTotal and record its SHA-256 for the Nexus release.

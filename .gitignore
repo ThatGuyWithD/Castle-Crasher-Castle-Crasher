@@ -1,0 +1,8 @@
+*.exe
+*.pdb
+*.log
+*.crasher_backup_*
+*.unlocker_tmp
+.vs/
+bin/
+obj/

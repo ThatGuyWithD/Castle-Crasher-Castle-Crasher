@@ -22,26 +22,14 @@ Offline Castle Crashers save editor for your local Steam profile.
 - Magic: 1–25
 - Agility: 1–25
 
-Crasher Unlocker intentionally does not expose over-limit character values that Castle Crashers clamps or rejects.
-
-## Safety
-
-Crasher Unlocker edits only your own local save/profile. It does not unlock items for other players, does not require hosting multiplayer, does not inject into Castle Crashers, and does not write to game process memory.
-
-Changes stay staged until **Apply Changes** is pressed, and an automatic backup is created before the save is written.
+Crasher Unlocker edits only your own local save/profile and does not affect other players.
 
 ## Build from source
 
-The source is under `src/` and is split into several C# files for easier review on GitHub.
+The source is in `src/`.
 
 Run `BUILD_CRASHER_UNLOCKER_V1_2.cmd` on Windows with .NET Framework 4.x available.
 
 Output:
 
 `Crasher Unlocker V1.2.exe`
-
-No packer or obfuscator is used. The public source build does not require the release icon.
-
-## Antivirus false-positive note
-
-Some antivirus products may classify game save editors as GameHack, Potentially Unsafe, Generic, ML, or Anomalous because they locate game data, decrypt/re-encrypt a save, replace local files, and create/restore backups. The source code is included so the program can be reviewed directly.

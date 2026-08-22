@@ -1,0 +1,18 @@
+Crasher Unlocker V1.2
+=====================
+
+V1.2 focuses on UI cleanup, safety, and removing unsupported value editing.
+
+- Version updated to 1.2.0.0.
+- Dark mode remains the default with Light Mode available.
+- Simplified and reorganized the UI for clearer spacing and alignment.
+- Load Save receives attention first; editing controls remain unavailable until a save is loaded.
+- Renamed Global Unlocks to Profile Unlocks to make it clear these affect only the user's local save/profile.
+- Character list and Overview layout polished for readability.
+- Balance Character remains optional; normal manual edits are not auto-balanced.
+- MAX All Characters remains reversible while changes are staged.
+- Corrected combat-stat save semantics so the editor matches Castle Crashers' actual stored values.
+- Removed unsupported Advanced/Overclock editing for Level and combat stats after runtime testing showed the game clamps/rejects over-limit values.
+- Supported values are now Level 1-99 and combat stats 1-25.
+- Removed dead legacy Advanced/Overclock source code from the clean V1.2 release source.
+- Existing backup, checksum, encryption, staged Apply, progression, equipment, and profile-unlock systems remain intact.
